@@ -11,14 +11,8 @@
             <div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
                 <div class="social-media">
                     <p class="mb-0 d-flex">
-                        <a href="https://vk.com/teplichnyydvorik" class="d-flex align-items-center justify-content-center">
-                            <fa :icon="['fab', 'vk']" />
-                        </a>
-                        <a href="https://www.instagram.com/teplichnyydvorik/" class="d-flex align-items-center justify-content-center">
-                            <fa :icon="['fab', 'instagram']" />
-                        </a>
-                        <a href="https://ok.ru/teplichny.dvorik" class="d-flex align-items-center justify-content-center">
-                            <fa :icon="['fab', 'odnoklassniki']" />
+                        <a v-for="sc in social" :href="sc.link" class="d-flex align-items-center justify-content-center">
+                            <fa :icon="sc.icon" />
                         </a>
                     </p>
                 </div>
@@ -37,6 +31,24 @@ import {
 } from 'vue'
 
 export default defineComponent({
-    name: 'GreenhouseHeader'
+    name: 'GreenhouseHeader',
+    setup() {
+        const social = [{
+                icon: ['fab', 'vk'],
+                link: 'https://vk.com/teplichnyydvorik',
+            },
+            {
+                icon: ['fab', 'instagram'],
+                link: 'https://www.instagram.com/teplichnyydvorik/',
+            },
+            {
+                icon: ['fab', 'odnoklassniki'],
+                link: 'https://ok.ru/teplichny.dvorik',
+            }
+        ]
+        return {
+            social
+        }
+    },
 })
 </script>

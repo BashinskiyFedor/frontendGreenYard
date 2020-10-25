@@ -1,3 +1,4 @@
+<template>
 <section class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');">
     <div class="overlay"></div>
     <div class="container">
@@ -84,7 +85,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 text-center">
-                <div class="img"  style="background-image: url(images/bg_2.jpg);">
+                <div class="img" style="background-image: url(images/bg_2.jpg);">
                     <div class="overlay"></div>
                     <h2>ПРЕДОСТАВЛЕНИЕ ИНДИВИДУАЛЬНЫХ И КАЧЕСТВЕННЫХ УСЛУГ</h2>
                     <p>We can manage your dream building A small river named Duden flows by their place</p>
@@ -281,7 +282,7 @@
                         <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
                             <div class="user-img" style="background-image: url(images/person_1.jpg)">
                                 <span class="quote d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-quote-left"></i>
+                                    <fa :icon="['fas', 'quote-left']" />
                                 </span>
                             </div>
                             <div class="text">
@@ -295,7 +296,7 @@
                         <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
                             <div class="user-img" style="background-image: url(images/person_2.jpg)">
                                 <span class="quote d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-quote-left"></i>
+                                    <fa :icon="['fas', 'quote-left']" />
                                 </span>
                             </div>
                             <div class="text">
@@ -309,7 +310,7 @@
                         <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
                             <div class="user-img" style="background-image: url(images/person_3.jpg)">
                                 <span class="quote d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-quote-left"></i>
+                                    <fa :icon="['fas', 'quote-left']" />
                                 </span>
                             </div>
                             <div class="text">
@@ -323,7 +324,7 @@
                         <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
                             <div class="user-img" style="background-image: url(images/person_1.jpg)">
                                 <span class="quote d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-quote-left"></i>
+                                    <fa :icon="['fas', 'quote-left']" />
                                 </span>
                             </div>
                             <div class="text">
@@ -337,7 +338,7 @@
                         <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
                             <div class="user-img" style="background-image: url(images/person_3.jpg)">
                                 <span class="quote d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-quote-left"></i>
+                                    <fa :icon="['fas', 'quote-left']" />
                                 </span>
                             </div>
                             <div class="text">
@@ -363,56 +364,14 @@
         </div>
         <div class="row d-flex">
             <div class="col-lg-4 ">
-                <div class="blog-entry">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-                    </a>
-                    <div class="text d-block">
-                        <div class="meta">
-                            <p>
-                                <a href="#"><span class="fa fa-calendar mr-2"></span>Sept. 06, 2020</a>
-                                <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
-                                <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
-                            </p>
-                        </div>
-                        <h3 class="heading"><a href="#">Best for any industrial &amp; business solution</a></h3>
-                        <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-                    </div>
-                </div>
+                <BlogCard />
             </div>
 
             <div class="col-lg-4 ">
-                <div class="blog-entry">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-                    </a>
-                    <div class="text d-block">
-                        <div class="meta">
-                            <p>
-                                <a href="#"><span class="fa fa-calendar mr-2"></span>Sept. 06, 2020</a>
-                                <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
-                                <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
-                            </p>
-                        </div>
-                        <h3 class="heading"><a href="#">Best for any industrial &amp; business solution</a></h3>
-                        <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-                    </div>
-                </div>
+                <BlogCard />
             </div>
             <div class="col-lg-4 ">
-                <div class="blog-entry">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-                    </a>
-                    <div class="text d-block">
-                        <div class="meta">
-                            <p>
-                                <a href="#"><span class="fa fa-calendar mr-2"></span>Sept. 06, 2020</a>
-                                <a href="#"><span class="fa fa-user mr-2"></span>Admin</a>
-                                <a href="#" class="meta-chat"><span class="fa fa-comment mr-2"></span> 3</a>
-                            </p>
-                        </div>
-                        <h3 class="heading"><a href="#">Best for any industrial &amp; business solution</a></h3>
-                        <p><a href="blog.html" class="btn btn-secondary py-2 px-3">Read more</a></p>
-                    </div>
-                </div>
+                <BlogCard />
             </div>
         </div>
     </div>
@@ -420,11 +379,15 @@
 </template>
 
 <script lang="ts">
+import BlogCard from "@/components/main/greenhouse/includes/main/BlogCard.vue"
 import {
-  defineComponent
+    defineComponent
 } from 'vue'
 
 export default defineComponent({
-  name: 'Main'
+    name: 'Main',
+    components: {
+        BlogCard,
+    }
 })
 </script>

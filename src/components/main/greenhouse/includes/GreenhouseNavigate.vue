@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
                 <div class="icon d-flex justify-content-center align-items-center">
-                    <span class="fa fa-map"></span>
+                    <fa :icon="['fa', 'map']" />
                 </div>
                 <div class="pr-md-4 pl-md-3 pl-3 text">
                     <p class="con"><span>Наш номер</span> <span>8-962-300-37-33</span></p>
@@ -18,7 +18,8 @@
                 </div>
             </div>
             <div class="col-md-4 d-flex topper mb-md-0 align-items-center">
-                <div class="icon d-flex justify-content-center align-items-center"><span class="fa fa-paper-plane"></span>
+                <div class="icon d-flex justify-content-center align-items-center">
+                    <fa :icon="['fas', 'paper-plane']" />
                 </div>
                 <div class="text pl-3 pl-md-3">
                     <p class="hr"><span>Наше местоположение</span></p>
@@ -49,10 +50,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import {
+    defineComponent
+} from 'vue'
 
 export default defineComponent({
-  name: 'GreenHouseNavigate'
+    name: 'GreenHouseNavigate',
+    setup() {},
 })
-
 </script>

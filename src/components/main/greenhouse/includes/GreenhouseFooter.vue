@@ -7,9 +7,11 @@
                     <h2 class="ftco-heading-2 d-flex align-items-center">About</h2>
                     <p>Far far away, behind the word mountains, far from the countries.</p>
                     <ul class="ftco-footer-social list-unstyled mt-4">
-                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                        <li v-for="(sc, id) in social" :key="id">
+                            <a :href="sc.link" class="d-flex align-items-center justify-content-center">
+                                <fa :icon="sc.icon" />
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -19,17 +21,18 @@
                     <h2 class="ftco-heading-2">Links</h2>
                     <div class="d-flex">
                         <ul class="list-unstyled mr-md-4">
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Project</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Services</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog Posts</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Industries</a></li>
+                            <li v-for="(link, key) in links">
+                                <a href="#">
+                                    <fa class="mr-2" :icon="link.icon" />{{ link.title }}
+                                </a>
+                            </li>
                         </ul>
                         <ul class="list-unstyled ml-md-5">
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy Policy</a></li>
-                            <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Terms of Use</a></li>
+                            <li v-for="(contact, key) in contacts">
+                                <a href="#">
+                                    <fa class="mr-2" :icon="contact.icon" />{{ contact.title }}
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -39,10 +42,11 @@
                 <div class="ftco-footer-widget">
                     <h2 class="ftco-heading-2">Services</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Customer Services</a></li>
-                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Prompt Delivery</a></li>
-                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Reliable Equipment</a></li>
-                        <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New Heavy Equipment</a></li>
+                        <li v-for="(service, key) in services">
+                            <a href="#">
+                                <fa class="mr-2" :icon="service.icon" />{{ service.title }}
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -81,6 +85,83 @@ import {
 } from 'vue'
 
 export default defineComponent({
-    name: 'GreenHouseFooter'
+    name: 'GreenHouseFooter',
+    setup() {
+        const links = [{
+                icon: ['fa', 'chevron-right'],
+                title: 'Project'
+            },
+            {
+                icon: ['fa', 'chevron-right'],
+                title: 'About Us'
+            },
+            {
+                icon: ['fa', 'chevron-right'],
+                title: 'Services'
+            },
+            {
+                icon: ['fa', 'chevron-right'],
+                title: 'Blog Posts'
+            },
+            {
+                icon: ['fa', 'chevron-right'],
+                title: 'Industries'
+            },
+        ]
+        const contacts = [{
+                icon: ['fa', 'chevron-right'],
+                title: 'Contact'
+            },
+            {
+                icon: ['fa', 'chevron-right'],
+                title: 'Help'
+            },
+            {
+                icon: ['fa', 'chevron-right'],
+                title: 'Privacy Policy'
+            },
+            {
+                icon: ['fa', 'chevron-right'],
+                title: 'Terms of Use'
+            }
+        ]
+        const services = [{
+                icon: ['fa', 'chevron-right'],
+                title: 'Customer Services'
+            },
+            {
+                icon: ['fa', 'chevron-right'],
+                title: 'Prompt Delivery'
+            },
+            {
+                icon: ['fa', 'chevron-right'],
+                title: 'Reliable Equipment'
+            },
+            {
+                icon: ['fa', 'chevron-right'],
+                title: 'New Heavy Equipment',
+            }
+        ]
+        const social = [{
+                icon: ['fab', 'vk'],
+                link: 'https://vk.com/teplichnyydvorik',
+            },
+            {
+                icon: ['fab', 'instagram'],
+                link: 'https://www.instagram.com/teplichnyydvorik/',
+            },
+            {
+                icon: ['fab', 'odnoklassniki'],
+                link: 'https://ok.ru/teplichny.dvorik',
+            }
+        ]
+        return {
+            links,
+            contacts,
+            services,
+            social,
+        }
+    }
+
 })
 </script>
