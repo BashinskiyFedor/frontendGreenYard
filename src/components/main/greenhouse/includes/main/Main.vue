@@ -17,69 +17,14 @@
 <section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-2">
     <div class="container">
         <div class="row no-gutters d-flex">
-            <div class="col-lg-4 d-flex align-self-stretch ">
-                <div class="media block-6 services d-flex">
-                    <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-engineer-1"></span></div>
-                    <div class="media-body pl-4">
-                        <h3 class="heading mb-3">Качественный монтаж</h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 d-flex align-self-stretch ">
-                <div class="media block-6 services services-2 d-flex">
-                    <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-worker-1"></span></div>
-                    <div class="media-body pl-4">
-                        <h3 class="heading mb-3">Индивидуальный подход</h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 d-flex align-self-stretch ">
-                <div class="media block-6 services d-flex">
-                    <div class="icon justify-content-center align-items-center d-flex"><span class="flaticon-engineer"></span></div>
-                    <div class="media-body pl-4">
-                        <h3 class="heading mb-3">Довольные клиенты</h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                    </div>
-                </div>
-            </div>
+            <WorkCard class="col-lg-4 d-flex align-self-stretch" />
+            <WorkCard class="col-lg-4 d-flex align-self-stretch" />
+            <WorkCard class="col-lg-4 d-flex align-self-stretch" />
         </div>
     </div>
 </section>
 
-<section class="ftco-section" id="about-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 d-flex align-items-stretch">
-                <div class="about-wrap img w-100" style="background-image: url(images/about.jpg);">
-                    <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-crane"></span></div>
-                </div>
-            </div>
-            <div class="col-md-6 py-5 pl-md-5">
-                <div class="row justify-content-center mb-4 pt-md-4">
-                    <div class="col-md-12 heading-section ">
-                        <span class="subheading">Добро пожаловать в GREENHOUSE YARD</span>
-                        <h2 class="mb-4">GREENHOUSE YARD</h2>
-                        <div class="d-flex about">
-                            <div class="icon"><span class="flaticon-hammer"></span></div>
-                            <h3>
-                                Мы работаем в этом бизнесе с 1975 года и предоставляем лучшие промышленные услуги.
-                            </h3>
-                        </div>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                        <div class="d-flex video-image align-items-center mt-md-4">
-                            <a href="#" class="video img d-flex align-items-center justify-content-center" style="background-image: url(images/about-2.jpg);">
-                                <span class="fa fa-play-circle"></span>
-                            </a>
-                            <h4 class="ml-4">Вот как мы работаем с нашими клиентами, Смотрите видео</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<AboutSection />
 
 <section class="ftco-intro">
     <div class="container">
@@ -106,79 +51,19 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="services-wrap ">
-                    <div class="img" style="background-image: url(images/services-1.jpg);"></div>
-                    <div class="text">
-                        <div class="icon"><span class="flaticon-architect"></span></div>
-                        <h2>Проектирование</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                        <a href="#" class="btn-custom">Узнать больше</a>
-                    </div>
-                </div>
+                <ServiceCard />
             </div>
             <div class="col-md-4">
-                <div class="services-wrap ">
-                    <div class="img" style="background-image: url(images/services-2.jpg);"></div>
-                    <div class="text">
-                        <div class="icon"><span class="flaticon-worker"></span></div>
-                        <h2>Ремонт</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                        <a href="#" class="btn-custom">Узнать больше</a>
-                    </div>
-                </div>
+                <ServiceCard />
             </div>
             <div class="col-md-4">
-                <div class="services-wrap ">
-                    <div class="img" style="background-image: url(images/services-3.jpg);"></div>
-                    <div class="text">
-                        <div class="icon"><span class="flaticon-hammer"></span></div>
-                        <h2>Производство и монтаж</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                        <a href="#" class="btn-custom">Узнать больше</a>
-                    </div>
-                </div>
+                <ServiceCard />
             </div>
         </div>
     </div>
 </section>
 
-<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter">
-    <div class="img image-overlay" style="background-image: url(images/about-3.jpg);"></div>
-    <div class="container">
-        <div class="row no-gutters">
-            <div class="col-md-6 py-5 bg-secondary aside-stretch">
-                <div class="heading-section heading-section-white p-4 pl-md-0 py-md-5 pr-md-5">
-                    <span class="subheading">Wilcon A Construction Company</span>
-                    <h2 class="mb-4">Best Provider for Industrial Services</h2>
-                    <h4>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h4>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-                </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-center">
-                <div class="row">
-                    <div class="col-md-12 d-flex counter-wrap ">
-                        <div class="block-18 bg-primary d-flex align-items-center justify-content-between">
-                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-engineer"></span></div>
-                            <div class="text">
-                                <strong class="number" data-number="48000">0</strong>
-                                <span>Завершенных заказов</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 d-flex counter-wrap ">
-                        <div class="block-18 d-flex align-items-center justify-content-between">
-                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-worker-1"></span></div>
-                            <div class="text">
-                                <strong class="number" data-number="54900">0</strong>
-                                <span>Довольных клиентов</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<StatisticCompanySection />
 
 <section class="ftco-section">
     <div class="container">
@@ -190,77 +75,23 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="project">
-                    <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                        <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                    </a>
-                    <div class="text">
-                        <span class="subheading">Building</span>
-                        <h3>Building A Condominium</h3>
-                        <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                    </div>
-                </div>
+                <ProjectCard />
             </div>
             <div class="col-md-4">
-                <div class="project">
-                    <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                        <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                    </a>
-                    <div class="text">
-                        <span class="subheading">Building</span>
-                        <h3>Building A Condominium</h3>
-                        <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                    </div>
-                </div>
+                <ProjectCard />
             </div>
             <div class="col-md-4">
-                <div class="project">
-                    <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                        <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                    </a>
-                    <div class="text">
-                        <span class="subheading">Building</span>
-                        <h3>Building A Condominium</h3>
-                        <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                    </div>
-                </div>
+                <ProjectCard />
             </div>
 
             <div class="col-md-4">
-                <div class="project">
-                    <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                        <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                    </a>
-                    <div class="text">
-                        <span class="subheading">Building</span>
-                        <h3>Building A Condominium</h3>
-                        <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                    </div>
-                </div>
+                <ProjectCard />
             </div>
             <div class="col-md-4">
-                <div class="project">
-                    <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                        <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                    </a>
-                    <div class="text">
-                        <span class="subheading">Building</span>
-                        <h3>Building A Condominium</h3>
-                        <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                    </div>
-                </div>
+                <ProjectCard />
             </div>
             <div class="col-md-4">
-                <div class="project">
-                    <a href="images/project-1.jpg" class="img image-popup d-flex align-items-center" style="background-image: url(images/project-1.jpg);">
-                        <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fa fa-plus"></span></div>
-                    </a>
-                    <div class="text">
-                        <span class="subheading">Building</span>
-                        <h3>Building A Condominium</h3>
-                        <p><span class="fa fa-map-marker mr-1"></span> San Francisco, California, USA</p>
-                    </div>
-                </div>
+                <ProjectCard />
             </div>
         </div>
     </div>
@@ -380,6 +211,12 @@
 
 <script lang="ts">
 import BlogCard from "@/components/main/greenhouse/includes/main/BlogCard.vue"
+import ServiceCard from "@/components/main/greenhouse/includes/main/ServiceCard.vue"
+import WorkCard from "@/components/main/greenhouse/includes/main/WorkCard.vue"
+import AboutSection from "@/components/main/greenhouse/includes/main/WorkCard.vue"
+import ProjectCard from "@/components/main/greenhouse/includes/main/ProjectCard.vue"
+import StatisticCompanySection from "@/components/main/greenhouse/includes/main/StatisticCompanySection.vue"
+
 import {
     defineComponent
 } from 'vue'
@@ -388,6 +225,11 @@ export default defineComponent({
     name: 'Main',
     components: {
         BlogCard,
+        ServiceCard,
+        WorkCard,
+        AboutSection,
+        ProjectCard,
+        StatisticCompanySection,
     }
 })
 </script>
