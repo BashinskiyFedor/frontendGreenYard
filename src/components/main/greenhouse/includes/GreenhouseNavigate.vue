@@ -52,7 +52,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-    name: "GreenHouseNavigate"
+  name: 'GreenHouseNavigate'
 })
 
 </script>

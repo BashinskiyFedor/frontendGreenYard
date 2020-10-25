@@ -5,10 +5,10 @@
 
 <script lang="ts">
 import {
-    defineComponent
-} from 'vue';
-import GreenhouseNavigate from "../"
+  defineComponent
+} from 'vue'
+import GreenhouseNavigate from '../'
 export default defineComponent({
-    name: 'Greenhouse'
+  name: 'Greenhouse'
 })
 </script>

@@ -207,10 +207,10 @@
 
 <script lang="ts">
 import {
-    defineComponent
-} from 'vue';
+  defineComponent
+} from 'vue'
 
 export default defineComponent({
-    name: 'Blog'
+  name: 'Blog'
 })
 </script>

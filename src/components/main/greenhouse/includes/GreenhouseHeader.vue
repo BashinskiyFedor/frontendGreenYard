@@ -11,9 +11,15 @@
             <div class="col-sm justify-content-center d-flex mb-md-0 mb-2">
                 <div class="social-media">
                     <p class="mb-0 d-flex">
-                        <a href="https://vk.com/teplichnyydvorik" class="d-flex align-items-center justify-content-center"><span class="fa fa-vk"><i class="sr-only">VK</i></span></a>
-                        <a href="https://www.instagram.com/teplichnyydvorik/" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                        <a href="https://ok.ru/teplichny.dvorik" class="d-flex align-items-center justify-content-center"><span class="fa fa-odnoklassniki"><i class="sr-only">OK</i></span></a>
+                        <a href="https://vk.com/teplichnyydvorik" class="d-flex align-items-center justify-content-center">
+                            <fa :icon="['fab', 'vk']" />
+                        </a>
+                        <a href="https://www.instagram.com/teplichnyydvorik/" class="d-flex align-items-center justify-content-center">
+                            <fa :icon="['fab', 'instagram']" />
+                        </a>
+                        <a href="https://ok.ru/teplichny.dvorik" class="d-flex align-items-center justify-content-center">
+                            <fa :icon="['fab', 'odnoklassniki']" />
+                        </a>
                     </p>
                 </div>
             </div>
@@ -28,7 +34,7 @@
 <script lang="ts">
 import {
     defineComponent
-} from 'vue';
+} from 'vue'
 
 export default defineComponent({
     name: 'GreenhouseHeader'

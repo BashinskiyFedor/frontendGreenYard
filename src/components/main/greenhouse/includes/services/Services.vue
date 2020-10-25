@@ -94,10 +94,10 @@
 
 <script lang="ts">
 import {
-    defineComponent
-} from 'vue';
+  defineComponent
+} from 'vue'
 
 export default defineComponent({
-    name: 'Services'
+  name: 'Services'
 })
 </script>

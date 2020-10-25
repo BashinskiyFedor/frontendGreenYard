@@ -78,9 +78,9 @@
 <script lang="ts">
 import {
     defineComponent
-} from "vuex";
+} from 'vue'
 
 export default defineComponent({
-    name: 'GreenHouseFooter',
+    name: 'GreenHouseFooter'
 })
 </script>

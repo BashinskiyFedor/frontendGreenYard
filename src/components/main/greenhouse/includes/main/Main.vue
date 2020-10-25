@@ -23,7 +23,7 @@
                         <h3 class="heading mb-3">Качественный монтаж</h3>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                     </div>
-                </div>      
+                </div>
             </div>
             <div class="col-lg-4 d-flex align-self-stretch ">
                 <div class="media block-6 services services-2 d-flex">
@@ -32,7 +32,7 @@
                         <h3 class="heading mb-3">Индивидуальный подход</h3>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                     </div>
-                </div>      
+                </div>
             </div>
             <div class="col-lg-4 d-flex align-self-stretch ">
                 <div class="media block-6 services d-flex">
@@ -41,7 +41,7 @@
                         <h3 class="heading mb-3">Довольные клиенты</h3>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                     </div>
-                </div>      
+                </div>
             </div>
         </div>
     </div>
@@ -421,10 +421,10 @@
 
 <script lang="ts">
 import {
-    defineComponent
-} from 'vue';
+  defineComponent
+} from 'vue'
 
 export default defineComponent({
-    name: 'Main'
+  name: 'Main'
 })
 </script>

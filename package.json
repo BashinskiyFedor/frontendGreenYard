@@ -3,13 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --fix",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^3.0.0-2",
     "core-js": "^3.6.5",
-    "sass": "^1.27.0",
+    "file-loader": "^6.1.1",
+    "font-awesome": "^4.7.0",
+    "font-awesome-sass-loader": "^2.0.1",
+    "url-loader": "^4.1.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-beta.4",
     "vuex": "^4.0.0-beta.4"
@@ -31,6 +39,10 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0-alpha.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.4",
     "typescript": "~3.9.3",
     "vue-cli-plugin-vue-next": "~0.1.4"
   }

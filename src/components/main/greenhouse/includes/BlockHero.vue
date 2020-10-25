@@ -126,10 +126,10 @@
 
 <script lang="ts">
 import {
-    defineComponent
-} from 'vue';
+  defineComponent
+} from 'vue'
 
 export default defineComponent({
-    name: 'BlockHero'
+  name: 'BlockHero'
 })
 </script>
