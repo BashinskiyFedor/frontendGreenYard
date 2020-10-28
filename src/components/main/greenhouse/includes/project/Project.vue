@@ -3,7 +3,7 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-start">
-            <div class="col-md-9 ftco-animate pb-5">
+            <div class="col-md-9  pb-5">
                 <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Projects <i class="fa fa-chevron-right"></i></span></p>
                 <h1 class="mb-3 bread">Projects</h1>
             </div>
@@ -14,7 +14,7 @@
 <section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
-            <div class="col-md-7 text-center heading-section ftco-animate">
+            <div class="col-md-7 text-center heading-section ">
                 <span class="subheading">Our Global Work Industries</span>
                 <h2 class="mb-4">Latest Projects</h2>
             </div>

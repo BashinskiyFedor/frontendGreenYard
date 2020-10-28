@@ -2,7 +2,7 @@
 	<div class="overlay"></div>
 	<div class="container">
 	  <div class="row no-gutters slider-text align-items-end justify-content-start">
-		<div class="col-md-9 ftco-animate pb-5">
+		<div class="col-md-9  pb-5">
 		 <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Our Blog <i class="fa fa-chevron-right"></i></span></p>
 		 <h1 class="mb-3 bread">Our Blog</h1>
 	   </div>
@@ -13,7 +13,7 @@
   <section class="ftco-section bg-light">
 	<div class="container">
 	  <div class="row d-flex">
-		<div class="col-lg-4 ftco-animate">
+		<div class="col-lg-4 ">
 		  <div class="blog-entry">
 			<a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
 			</a>
@@ -31,7 +31,7 @@
 	   </div>
 	 </div>
   
-	 <div class="col-lg-4 ftco-animate">
+	 <div class="col-lg-4 ">
 	  <div class="blog-entry">
 		<a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
 		</a>
@@ -48,7 +48,7 @@
 	 </div>
    </div>
   </div>
-  <div class="col-lg-4 ftco-animate">
+  <div class="col-lg-4 ">
 	<div class="blog-entry">
 	  <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
 	  </a>
@@ -66,7 +66,7 @@
   </div>
   </div>
   
-  <div class="col-lg-4 ftco-animate">
+  <div class="col-lg-4 ">
 	<div class="blog-entry">
 	  <a href="blog-single.html" class="block-20" style="background-image: url('images/image_4.jpg');">
 	  </a>
@@ -84,7 +84,7 @@
   </div>
   </div>
   
-  <div class="col-lg-4 ftco-animate">
+  <div class="col-lg-4 ">
 	<div class="blog-entry">
 	  <a href="blog-single.html" class="block-20" style="background-image: url('images/image_5.jpg');">
 	  </a>
@@ -101,7 +101,7 @@
    </div>
   </div>
   </div>
-  <div class="col-lg-4 ftco-animate">
+  <div class="col-lg-4 ">
 	<div class="blog-entry">
 	  <a href="blog-single.html" class="block-20" style="background-image: url('images/image_6.jpg');">
 	  </a>

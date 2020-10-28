@@ -3,7 +3,7 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-end justify-content-start">
-				<div class="col-md-9 ftco-animate pb-5">
+				<div class="col-md-9  pb-5">
 					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Contact us <i class="fa fa-chevron-right"></i></span></p>
 					<h1 class="mb-3 bread">Contact us</h1>
 				</div>
@@ -14,7 +14,7 @@
 	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
+				<div class="col-md-7 heading-section text-center ">
 					<span class="subheading">Contact us</span>
 					<h2 class="mb-4">Message us for more details</h2>
 					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
@@ -57,7 +57,7 @@
 
 				<div class="col-md-4 d-flex pl-md-5">
 					<div class="row">
-						<div class="dbox w-100 d-flex ftco-animate">
+						<div class="dbox w-100 d-flex ">
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="fa fa-map-marker"></span>
 							</div>
@@ -65,7 +65,7 @@
 								<p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
 							</div>
 						</div>
-						<div class="dbox w-100 d-flex ftco-animate">
+						<div class="dbox w-100 d-flex ">
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="fa fa-phone"></span>
 							</div>
@@ -73,7 +73,7 @@
 								<p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
 							</div>
 						</div>
-						<div class="dbox w-100 d-flex ftco-animate">
+						<div class="dbox w-100 d-flex ">
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="fa fa-paper-plane"></span>
 							</div>
@@ -81,7 +81,7 @@
 								<p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
 							</div>
 						</div>
-						<div class="dbox w-100 d-flex ftco-animate">
+						<div class="dbox w-100 d-flex ">
 							<div class="icon d-flex align-items-center justify-content-center">
 								<span class="fa fa-globe"></span>
 							</div>

@@ -1,7 +1,7 @@
 <section class="ftco-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 ftco-animate">
+        <div class="col-lg-8 ">
           <h2 class="mb-3">It is a long established fact a reader be distracted</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
           <p>
@@ -122,7 +122,7 @@
           </div>
   
         </div> <!-- .col-md-8 -->
-        <div class="col-lg-4 sidebar ftco-animate">
+        <div class="col-lg-4 sidebar ">
           <div class="sidebar-box">
             <form action="#" class="search-form">
               <div class="form-group">
@@ -131,7 +131,7 @@
               </div>
             </form>
           </div>
-          <div class="sidebar-box ftco-animate">
+          <div class="sidebar-box ">
            <h3 class="heading-sidebar">Services</h3>
            <ul class="categories">
             <li><a href="#">Architecture <span>(12)</span></a></li>
@@ -143,7 +143,7 @@
           </ul>
         </div>
   
-        <div class="sidebar-box ftco-animate">
+        <div class="sidebar-box ">
           <h3 class="heading-sidebar">Recent Blog</h3>
           <div class="block-21 mb-4 d-flex">
             <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
@@ -180,7 +180,7 @@
           </div>
         </div>
   
-        <div class="sidebar-box ftco-animate">
+        <div class="sidebar-box ">
           <h3 class="heading-sidebar">Tag Cloud</h3>
           <div class="tagcloud">
             <a href="#" class="tag-cloud-link">construction</a>
@@ -194,7 +194,7 @@
           </div>
         </div>
   
-        <div class="sidebar-box ftco-animate">
+        <div class="sidebar-box ">
           <h3 class="heading-sidebar">Paragraph</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
         </div>
