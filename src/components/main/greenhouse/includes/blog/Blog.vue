@@ -1,8 +1,9 @@
 <template>
+<div>
 <section class="ftco-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 ftco-animate">
+            <div class="col-lg-8 ">
                 <h2 class="mb-3">It is a long established fact a reader be distracted</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
                 <p>
@@ -18,14 +19,7 @@
                 <p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>
                 <p>Adipisci vero culpa, eius nobis soluta. Dolore, maxime ullam ipsam quidem, dolor distinctio similique asperiores voluptas enim, exercitationem ratione aut adipisci modi quod quibusdam iusto, voluptates beatae iure nemo itaque laborum. Consequuntur et pariatur totam fuga eligendi vero dolorum provident. Voluptatibus, veritatis. Beatae numquam nam ab voluptatibus culpa, tenetur recusandae!</p>
                 <p>Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?</p>
-                <div class="tag-widget post-tag-container mb-5 mt-5">
-                    <div class="tagcloud">
-                        <a href="#" class="tag-cloud-link">Life</a>
-                        <a href="#" class="tag-cloud-link">Sport</a>
-                        <a href="#" class="tag-cloud-link">Tech</a>
-                        <a href="#" class="tag-cloud-link">Travel</a>
-                    </div>
-                </div>
+                <TagCloud />
 
                 <div class="about-author d-flex p-4 bg-light">
                     <div class="bio mr-5">
@@ -93,36 +87,11 @@
                     </ul>
                     <!-- END comment-list -->
 
-                    <div class="comment-form-wrap pt-5">
-                        <h3 class="mb-5 font-weight-bold">Leave a comment</h3>
-                        <form action="#" class="p-5 bg-light">
-                            <div class="form-group">
-                                <label for="name">Name *</label>
-                                <input type="text" class="form-control" id="name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" class="form-control" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label for="website">Website</label>
-                                <input type="url" class="form-control" id="website">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Post Comment" class="btn py-3 px-4 btn-primary">
-                            </div>
-
-                        </form>
-                    </div>
+                    <CommentForm />
                 </div>
 
             </div> <!-- .col-md-8 -->
-            <div class="col-lg-4 sidebar ftco-animate">
+            <div class="col-lg-4 sidebar ">
                 <div class="sidebar-box">
                     <form action="#" class="search-form">
                         <div class="form-group">
@@ -131,7 +100,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="sidebar-box ftco-animate">
+                <div class="sidebar-box ">
                     <h3 class="heading-sidebar">Services</h3>
                     <ul class="categories">
                         <li><a href="#">Architecture <span>(12)</span></a></li>
@@ -143,58 +112,11 @@
                     </ul>
                 </div>
 
-                <div class="sidebar-box ftco-animate">
-                    <h3 class="heading-sidebar">Recent Blog</h3>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> Sept. 06, 2020</a></div>
-                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> Sept. 06, 2020</a></div>
-                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_3.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> Sept. 06, 2020</a></div>
-                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <RecentBlog />
 
-                <div class="sidebar-box ftco-animate">
-                    <h3 class="heading-sidebar">Tag Cloud</h3>
-                    <div class="tagcloud">
-                        <a href="#" class="tag-cloud-link">construction</a>
-                        <a href="#" class="tag-cloud-link">build</a>
-                        <a href="#" class="tag-cloud-link">architect</a>
-                        <a href="#" class="tag-cloud-link">hammer</a>
-                        <a href="#" class="tag-cloud-link">building</a>
-                        <a href="#" class="tag-cloud-link">construct</a>
-                        <a href="#" class="tag-cloud-link">machine</a>
-                        <a href="#" class="tag-cloud-link">system</a>
-                    </div>
-                </div>
+                <SidebarBoxTag />
 
-                <div class="sidebar-box ftco-animate">
+                <div class="sidebar-box ">
                     <h3 class="heading-sidebar">Paragraph</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
                 </div>
@@ -203,14 +125,23 @@
         </div>
     </div>
 </section> <!-- .section -->
+</div>
 </template>
 
 <script lang="ts">
 import {
   defineComponent
 } from 'vue'
+import TagCloud from "@/components/main/greenhouse/includes/blog/TagCloud.vue"
+import SidebarBoxTag from "@/components/main/greenhouse/includes/blog/SidebarBoxTag.vue"
+import RecentBlog from "@/components/main/greenhouse/includes/blog/RecentBlog.vue"
 
 export default defineComponent({
-  name: 'Blog'
+  name: 'Blog',
+  components: {
+      TagCloud,
+      SidebarBoxTag,
+      RecentBlog,
+  }
 })
 </script>

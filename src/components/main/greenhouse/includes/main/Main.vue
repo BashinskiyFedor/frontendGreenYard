@@ -1,18 +1,5 @@
 <template>
-<section class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center">
-            <div class="col-lg-6 ">
-                <div class="mt-5">
-                    <h1 class="mb-4">Мы строим<br><span>отличные теплицы</span></h1>
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p>
-                    <p><a href="#" class="btn btn-primary">Наши услуги</a> <a href="#" class="btn btn-white">Акции</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<OverlaySection />
 
 <section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-2">
     <div class="container">
@@ -109,76 +96,8 @@
             </div>
             <div class="col-md-6 pl-md-5 py-4 py-md-5 aside-stretch-right">
                 <div class="carousel-testimony owl-carousel ftco-owl">
-                    <div class="item">
-                        <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-                            <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                                <span class="quote d-flex align-items-center justify-content-center">
-                                    <fa :icon="['fas', 'quote-left']" />
-                                </span>
-                            </div>
-                            <div class="text">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-                                <p class="name">Jeff Freshman</p>
-                                <span class="position">Guests</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-                            <div class="user-img" style="background-image: url(images/person_2.jpg)">
-                                <span class="quote d-flex align-items-center justify-content-center">
-                                    <fa :icon="['fas', 'quote-left']" />
-                                </span>
-                            </div>
-                            <div class="text">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-                                <p class="name">Jeff Freshman</p>
-                                <span class="position">Guests</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-                            <div class="user-img" style="background-image: url(images/person_3.jpg)">
-                                <span class="quote d-flex align-items-center justify-content-center">
-                                    <fa :icon="['fas', 'quote-left']" />
-                                </span>
-                            </div>
-                            <div class="text">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-                                <p class="name">Jeff Freshman</p>
-                                <span class="position">Guests</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-                            <div class="user-img" style="background-image: url(images/person_1.jpg)">
-                                <span class="quote d-flex align-items-center justify-content-center">
-                                    <fa :icon="['fas', 'quote-left']" />
-                                </span>
-                            </div>
-                            <div class="text">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-                                <p class="name">Jeff Freshman</p>
-                                <span class="position">Guests</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="testimony-wrap py-4 pb-5 d-flex justify-content-between align-items-end">
-                            <div class="user-img" style="background-image: url(images/person_3.jpg)">
-                                <span class="quote d-flex align-items-center justify-content-center">
-                                    <fa :icon="['fas', 'quote-left']" />
-                                </span>
-                            </div>
-                            <div class="text">
-                                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean</p>
-                                <p class="name">Jeff Freshman</p>
-                                <span class="position">Guests</span>
-                            </div>
-                        </div>
-                    </div>
+
+                    <Comment />
                 </div>
             </div>
         </div>
@@ -213,9 +132,12 @@
 import BlogCard from "@/components/main/greenhouse/includes/main/BlogCard.vue"
 import ServiceCard from "@/components/main/greenhouse/includes/main/ServiceCard.vue"
 import WorkCard from "@/components/main/greenhouse/includes/main/WorkCard.vue"
-import AboutSection from "@/components/main/greenhouse/includes/main/WorkCard.vue"
+import AboutSection from "@/components/main/greenhouse/includes/main/AboutSection.vue"
 import ProjectCard from "@/components/main/greenhouse/includes/main/ProjectCard.vue"
 import StatisticCompanySection from "@/components/main/greenhouse/includes/main/StatisticCompanySection.vue"
+import Comment from "@/components/main/greenhouse/includes/main/Comment.vue"
+import OverlaySection from "@/components/main/greenhouse/includes/main/OverlaySection.vue"
+
 
 import {
     defineComponent
@@ -230,6 +152,8 @@ export default defineComponent({
         AboutSection,
         ProjectCard,
         StatisticCompanySection,
+        Comment,
+        OverlaySection,
     }
 })
 </script>
