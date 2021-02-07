@@ -36,12 +36,11 @@
         </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">О нас</a></li>
-                <li class="nav-item"><a href="services.html" class="nav-link">Услуги</a></li>
-                <li class="nav-item active"><a href="project.html" class="nav-link">Проекты</a></li>
-                <li class="nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Связаться с нами</a></li>
+                <li class="nav-item" v-for="(route, id) in routes" :key="id">
+                  <router-link class="nav-link" :to="{ name: route.name, params: {}}">
+                    {{ route.description }}
+                  </router-link>
+                </li>
             </ul>
             <a href="#" class="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Узнать больше</a>
         </div>
@@ -53,9 +52,22 @@
 import {
     defineComponent
 } from 'vue'
-
+import { ref } from "vue";
 export default defineComponent({
     name: 'GreenHouseNavigate',
-    setup() {},
+    setup() {
+      const routes = ref([
+        { name: 'home', description: 'Главная' },
+        { name: 'about', description: 'О нас' },
+        { name: 'services', description: 'Услуги' },
+        { name: 'project', description: 'Проекты' },
+        { name: 'blog', description: 'Блог' },
+        //{ name: 'contact', description: 'Связаться с нами' },
+      ]);
+
+      return {
+        routes
+      }
+    },
 })
 </script>

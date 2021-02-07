@@ -84,7 +84,7 @@ import {
 import TagCloud from "@/components/main/greenhouse/includes/blog/TagCloud.vue"
 import SidebarBoxTag from "@/components/main/greenhouse/includes/blog/SidebarBoxTag.vue"
 import RecentBlog from "@/components/main/greenhouse/includes/blog/RecentBlog.vue"
-import Comments from "@/components/main/greenhouse/includes/blog/Comments.vue"
+// import Comments from "@/components/main/greenhouse/includes/blog/Comments.vue"
 
 export default defineComponent({
   name: 'Blog',
@@ -92,6 +92,9 @@ export default defineComponent({
       TagCloud,
       SidebarBoxTag,
       RecentBlog,
+  },
+  setup() {
+    return {}
   }
 })
 </script>
